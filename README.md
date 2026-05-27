@@ -31,3 +31,15 @@ AGENT_MODEL=gemini-2.5-flash
 ## 🚀 Instalação e Execução (Local)
 
 1. **`Preparando o ambiente`**
+
+ ```
+python -m venv venv
+# Ativação no Windows:
+.\venv\Scripts\activate
+# Ativação no Linux/Mac:
+source venv/bin/activate
+```
+
+Instale as depedencias listadas no requirements.txt
+
+
