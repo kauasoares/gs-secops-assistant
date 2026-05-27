@@ -24,7 +24,7 @@ Antes de rodar a aplicação, renomeie o arquivo `.env.example` para `.env` e ad
 GOOGLE_API_KEY=...sua_chave_aqui...
 
 # Definição do modelo de IA
-AGENT_MODEL=gemini-2.5-flash
+AGENT_MODEL=gemini-2.5-flash```
 
 ---
 
