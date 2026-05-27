@@ -42,4 +42,55 @@ source venv/bin/activate
 
 Instale as depedencias listadas no requirements.txt
 
+```
+pip install -r requirements.txt
+```
 
+---
+
+2. **`Executando o Assistente`**
+O projeto possui duas frentes de execução
+
+**`Modo Terminal(CLI)`**
+
+```
+python main.py
+```
+
+**`Modo WEB(Flask)`**
+
+```
+python app.py
+```
+
+---
+
+## 🐳 Containerização (Docker)
+
+Para garantir a portabilidade e isolamento do serviço, o ambiente foi containerizado. Certifique-se de que o Docker Daemon está em execução.
+
+1. **`Construir a imagem`**
+
+```
+docker build -t secops-agent .
+```
+   
+2. **`Executar o container (Modo Web)`**
+   
+```
+docker run -p 5000:5000 --env-file .env secops-agent
+```
+
+---
+
+## 📂 Estrutura do Projeto
+
+agent.py: Configuração do agente, persistência (SqliteDb) e integração com o modelo (Gemini).
+
+tools.py: Lógica das funções de segurança utilizadas pelo agente.
+
+main.py: Ponto de entrada para a interface de linha de comando (CLI).
+
+app.py: Servidor Flask e interface Web (HTML/JS integrado).
+
+agent_memory.db: Banco de dados SQLite auto-gerado para retenção de histórico.
