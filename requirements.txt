@@ -1,0 +1,8 @@
+agno
+google-generativeai
+flask
+python-dotenv
+dnspython
+requests
+google-genai
+sqlalchemy

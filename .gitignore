@@ -1,0 +1,9 @@
+# Ignorar chaves e variáveis de ambiente
+.env
+
+# Ignorar ambiente virtual e cache do Python
+venv/
+__pycache__/
+
+# Ignorar o banco de dados local da memória do agente
+agent_memory.db
